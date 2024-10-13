@@ -1,0 +1,42 @@
+[
+  {
+    "AddPetsToStore": {
+      "id": 100,
+      "category": {
+        "id": 1,
+        "name": "Pomerian"
+      },
+      "name": "Ronny",
+      "photoUrls": [
+        "https://www.goodhousekeeping.com/life/pets/g4531/cutest-dog-breeds/"
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "dog"
+        }
+      ],
+      "status": "available"
+    }
+  },
+  {
+    "AddPetsToStore": {
+      "id": 200,
+      "category": {
+        "id": 1,
+        "name": "Pomerian"
+      },
+      "name": "Rocky",
+      "photoUrls": [
+        "https://www.goodhousekeeping.com/life/pets/g4531/cutest-dog-breeds/"
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "dog"
+        }
+      ],
+      "status": "available"
+    }
+  }
+]

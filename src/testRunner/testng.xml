@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SANITY">
+    <listeners>
+<!--                <listener class-name="com.petstore.api.listener.FailedTestRetryListener"/>-->
+    </listeners>
+    <parameter name="baseURI" value="https://petstore.swagger.io/v2" />
+    <test name="E-comm Sanity Tests" thread-count="1">
+        <classes>
+            <class name="com.petstore.backend.tests.TC_001_PetTests">
+            </class>
+
+        </classes>
+    </test>
+</suite>
