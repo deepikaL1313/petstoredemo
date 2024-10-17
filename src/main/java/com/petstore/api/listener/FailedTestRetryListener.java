@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 
 public class FailedTestRetryListener implements IAnnotationTransformer {
     /*
-    ** Overriding the transform method to set the RetryAnalyzer
+     ** Overriding the transform method to set the RetryAnalyzer
      */
     @Override
     public void transform(ITestAnnotation testAnnotation, Class testClass,

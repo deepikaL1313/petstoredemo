@@ -1,18 +1,27 @@
 package com.petstore.api.listener;
 
+import com.petstore.api.constants.Constants;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 public class RetryAnalyzer implements IRetryAnalyzer {
 
-    //Counter to keep track of retry attempts
+    /**
+     * Tracks the number of retry attempts.
+     */
     int retryAttemptsCounter = 0;
 
-    //The max limit to retry running of failed test cases
-    //Set the value to the number of times we want to retry
-    int maxRetryLimit = 1;
+    /**
+     * Maximum retry attempts allowed.
+     */
+    int maxRetryLimit = Constants.MAX_RETRY_ATTEMPT;
 
-    //Method to attempt retries for failure tests
+    /**
+     * Retries a failed test up to a maximum retry limit.
+     *
+     * @param result The result of the test execution.
+     * @return true if the test should be retried, false otherwise.
+     */
     @Override
     public boolean retry(ITestResult result) {
         if (!result.isSuccess()) {

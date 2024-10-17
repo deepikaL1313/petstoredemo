@@ -7,27 +7,36 @@ import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 
+/**
+ * Data Transfer Object for adding a pet to the store.
+ */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class AddPetToStoreDTO {
+    public int id;                    // Pet ID
+    public Category category;         // Pet category
+    public String name;               // Pet name
+    public ArrayList<String> photoUrls; // List of photo URLs
+    public ArrayList<Tag> tags;       // List of tags
+    public String status;             // Pet status (e.g., available, pending, sold)
 
-    public int id;
-    public Category category;
-    public String name;
-    public ArrayList<String> photoUrls;
-    public ArrayList<Tag> tags;
-    public String status;
+    /**
+     * Inner class representing a category.
+     */
     @Data
-    public class Category{
-        public int id;
-        public String name;
-    }
-   @Data
-    public class Tag{
-        public int id;
-        public String name;
+    public class Category {
+        public int id;                // Category ID
+        public String name;           // Category name
     }
 
+    /**
+     * Inner class representing a tag.
+     */
+    @Data
+    public class Tag {
+        public int id;                // Tag ID
+        public String name;           // Tag name
+    }
 }
