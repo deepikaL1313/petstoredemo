@@ -10,7 +10,7 @@
     <parameter name="baseURI" value="https://petstore.swagger.io/v2" />
 
     <!-- Defining the test block -->
-    <test name="E-comm Sanity Tests" thread-count="1">
+    <test name="Pet Store Sanity Tests" thread-count="1">
         <classes>
             <!-- Including the test class in the suite -->
             <class name="com.petstore.backend.tests.TC_001_PetTests"/>
