@@ -77,4 +77,16 @@ public class DataProviders {
         // Return the fetched data as a two-dimensional array
         return data;
     }
+
+    @DataProvider(name = "testDataForRemovalOfPetFromStore", parallel = false)
+    public Object[][] testDataForRemovalOfPetFromStore() {
+        // Fetch data from the Excel sheet using ExcelUtility
+        String[][] data = new ExcelUtility()
+                .getDataFromExcelSheet(Constants.PATH_TO_TEST_DATA_EXCEL_SHEET,
+                        "TestDataPet",
+                        "testDataForRemovalOfPetFromStore");
+
+        // Return the fetched data as a two-dimensional array
+        return data;
+    }
 }
