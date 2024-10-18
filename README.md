@@ -30,7 +30,7 @@ This is a comprehensive automation framework for testing the Pet Store API. It i
 
 Alternatively, you can run the tests directly through your IDE (such as IntelliJ IDEA or Eclipse) by right-clicking the testng.xml file and selecting "Run".
 
-Note : To view default TestNG reports , Edit the Run/Debug configurations 
+Note : To view default TestNG reports , Edit the Run/Debug configurations > Select Output Directory as Project's taget folder > Select Listeners tab > Checkmark Use default reports , Reports can be accessed from target folder > index.html
 
 ## Framework Structure
 
