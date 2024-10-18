@@ -42,6 +42,7 @@ Alternatively, you can run the tests directly through your IDE (such as IntelliJ
 Note : To view default TestNG reports , Edit the Run/Debug configurations > Select Output Directory as Project's taget folder > Select Listeners tab > Checkmark Use default reports , Reports can be accessed from target folder > index.html
 
 ## Framework Structure
+Plaintext
 
 petstore-api-automation-framework/
 |-- src/
