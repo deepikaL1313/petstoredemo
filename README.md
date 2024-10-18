@@ -22,16 +22,20 @@ This is a comprehensive automation framework for testing the Pet Store API. It i
 
 ## Setup
 1. Clone the repository:
+    ```bash
     git clone https://github.com/deepikaL1313/petstoredemo.git
    
 2. Navigate to the project directory:
+   ```bash
    cd petstoredemo
    
 3. Install the project dependencies:
-    mvn clean install 
+   ```bash
+    mvn clean install
    
-## Running Tests
-mvn test -DsuiteXmlFile=testng.xml
+4. Running tests
+   ```bash
+    mvn test -DsuiteXmlFile=testng.xml
 
 Alternatively, you can run the tests directly through your IDE (such as IntelliJ IDEA or Eclipse) by right-clicking the testng.xml file and selecting "Run".
 
