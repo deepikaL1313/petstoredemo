@@ -28,11 +28,10 @@ This is a comprehensive automation framework for testing the Pet Store API. It i
    cd petstoredemo
    
 3. Install the project dependencies:
-   mvn clean install 
+    mvn clean install 
    
 ## Running Tests
-1. To run test
-  mvn test -DsuiteXmlFile=testng.xml
+mvn test -DsuiteXmlFile=testng.xml
 
 Alternatively, you can run the tests directly through your IDE (such as IntelliJ IDEA or Eclipse) by right-clicking the testng.xml file and selecting "Run".
 
