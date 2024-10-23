@@ -4,7 +4,7 @@ name: Run Petstore API Test Cases
 
 on:
   push:
-    branches: [ "enableCICD" ]
+    branches: [ "main" ]
     
 jobs:
   build:
