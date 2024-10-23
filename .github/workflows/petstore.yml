@@ -5,7 +5,8 @@ name: Run Petstore API Test Cases
 on:
   push:
     branches: [ "main" ]
-    
+  pull_request :
+    branches: ["main"]
 jobs:
   build:
     runs-on: ubuntu-latest
