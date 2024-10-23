@@ -245,3 +245,31 @@
 23:18:51.769 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Validate Pet status is same as the created status
 23:18:52.049 [main] INFO  com.petstore.api.utils.ExcelUtility - startRow=4, endRow=6, startCol=0, endCol=2
 23:18:52.060 [main] INFO  com.petstore.backend.tests.TC_001_PetTests -  Delete Pet identified by Pet ID [2001]
+23:18:53.369 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"code":200,"type":"unknown","message":"2001"}
+23:18:53.374 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Fetch pet by ID
+23:18:54.693 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"code":1,"type":"error","message":"Pet not found"}
+23:18:54.695 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Verify Pet is not found [404]
+23:18:54.794 [main] INFO  com.petstore.api.utils.ExcelUtility - startRow=0, endRow=3, startCol=0, endCol=4
+23:18:54.809 [main] INFO  com.petstore.backend.tests.TC_001_PetTests -  Update name and status of a pet identified by Pet ID [2000]
+23:18:56.068 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"code":200,"type":"unknown","message":"2000"}
+23:18:56.071 [main] INFO  com.petstore.backend.tests.TC_001_PetTests -  Verify Update is successful - Response code : [200]
+23:18:56.071 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Check Update is successful by fetching the Pet by ID
+23:18:57.226 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"id":2000,"category":{"id":1,"name":"Pomerian"},"name":"Deepika","photoUrls":["https://www.goodhousekeeping.com/life/pets/g4531/cutest-dog-breeds/"],"tags":[{"id":1,"name":"dog"}],"status":"available"}
+23:18:57.230 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Verify Get Pet by ID - Response : [200]
+23:18:57.300 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Expected [available] , Actual [available]
+23:18:57.335 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Expected [Deepika] , Actual [Deepika]
+23:18:57.340 [main] INFO  com.petstore.backend.tests.TC_001_PetTests -  Update name and status of a pet identified by Pet ID [2001]
+23:18:58.605 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"code":404,"type":"unknown","message":"not found"}
+23:18:58.613 [main] INFO  com.petstore.backend.tests.TC_001_PetTests -  Verify Update is successful - Response code : [404]
+23:18:58.613 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Check Update is successful by fetching the Pet by ID
+23:18:59.938 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"code":1,"type":"error","message":"Pet not found"}
+23:18:59.940 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Verify Get Pet by ID - Response : [404]
+23:18:59.958 [main] ERROR com.petstore.backend.tests.TC_001_PetTests - Exception Occurred during execution of Test [Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]
+23:19:00.059 [main] INFO  com.petstore.api.utils.ExcelUtility - startRow=0, endRow=3, startCol=0, endCol=4
+23:19:00.073 [main] INFO  com.petstore.backend.tests.TC_001_PetTests -  Update name and status of a pet identified by Pet ID [2001]
+23:19:01.392 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"code":404,"type":"unknown","message":"not found"}
+23:19:01.396 [main] INFO  com.petstore.backend.tests.TC_001_PetTests -  Verify Update is successful - Response code : [404]
+23:19:01.397 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Check Update is successful by fetching the Pet by ID
+23:19:02.536 [main] INFO  com.petstore.api.utils.RestUtils - Response :{"code":1,"type":"error","message":"Pet not found"}
+23:19:02.543 [main] INFO  com.petstore.backend.tests.TC_001_PetTests - Verify Get Pet by ID - Response : [404]
+23:19:02.605 [main] ERROR com.petstore.backend.tests.TC_001_PetTests - Exception Occurred during execution of Test [Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]
