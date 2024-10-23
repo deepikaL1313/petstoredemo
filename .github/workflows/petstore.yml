@@ -18,7 +18,5 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean
-    - name : Run tests
-      run: mvn test -DsuiteXmlFile=testRunner/testng.xml
+    - name: Build and Run tests with Maven
+      run: mvn clean test -DsuiteXmlFile=testRunner/testng.xml
