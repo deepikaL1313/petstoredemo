@@ -1,10 +1,13 @@
 package com.petstore.api.utils;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
+
 import jxl.Sheet;
 import jxl.Workbook;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.core.io.ClassPathResource;
 
 public class ExcelUtility {
 
@@ -31,11 +34,11 @@ public class ExcelUtility {
     public String[][] getDataFromExcelSheet(String relativeExcelFile, String sheetName, String keyword){
         String[][] tabArray=null;
         try{
-            // Initialize file input stream
-            FileInputStream io = new FileInputStream(relativeExcelFile);
+
+            InputStream inputStream =new ClassPathResource(relativeExcelFile).getInputStream();
 
             // Open the workbook and sheet
-            jxl.Workbook workbook = Workbook.getWorkbook(io);
+            jxl.Workbook workbook = Workbook.getWorkbook(inputStream);
             Sheet sheet = workbook.getSheet(sheetName);
 
             // Find start and end cells of the data table

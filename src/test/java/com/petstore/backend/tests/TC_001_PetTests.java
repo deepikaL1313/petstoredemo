@@ -25,7 +25,7 @@ public class TC_001_PetTests extends BaseTest {
      *
      * @param petData Data of the pet to be added.
      */
-    @Test(groups = {"SANITY", "REGRESSION"}, description = "validateAddNewPetToStore - Validates if a new Pet can be added to Store",
+    @Test(priority = 1, groups = {"SANITY", "REGRESSION"}, description = "validateAddNewPetToStore - Validates if a new Pet can be added to Store",
             dataProvider = "testDataToAddPetToStore", dataProviderClass = DataProviders.class)
     public void validateAddPetsToStore(AddPetToStoreDTO petData) {
         SoftAssert s_assert = new SoftAssert();
@@ -64,7 +64,7 @@ public class TC_001_PetTests extends BaseTest {
      * @param petName   The new name of the pet.
      * @param petStatus The new status of the pet.
      */
-    @Test(groups = {"SANITY", "REGRESSION"}, description = "validateUpdateOfPetNameAndStatus - Validate updating of name and status of a pet is successful",
+    @Test(priority = 2, groups = {"SANITY", "REGRESSION"}, description = "validateUpdateOfPetNameAndStatus - Validate updating of name and status of a pet is successful",
             dataProvider = "testDataForUpdateOfPetNameStatus", dataProviderClass = DataProviders.class)
     public void validateUpdateOfPetNameAndStatus(String petID, String petName, String petStatus) {
         SoftAssert s_assert = new SoftAssert();
@@ -108,7 +108,7 @@ public class TC_001_PetTests extends BaseTest {
      *
      * @param petID The ID of the pet to remove.
      */
-    @Test(groups = {"SANITY", "REGRESSION"}, description = "validateRemovalOfPetFromStore - Validate removal of a pet from the store",
+    @Test(priority = 3 , groups = {"SANITY", "REGRESSION"}, description = "validateRemovalOfPetFromStore - Validate removal of a pet from the store",
             dataProvider = "testDataForRemovalOfPetFromStore", dataProviderClass = DataProviders.class)
     public void validateRemovalOfPetFromStore(String petID) {
         SoftAssert s_assert = new SoftAssert();
