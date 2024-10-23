@@ -35,7 +35,7 @@ This is a comprehensive automation framework for testing the Pet Store API. It i
    
 4. Running tests
    ```bash
-    mvn test -DsuiteXmlFile=testng.xml
+    mvn clean test -DsuiteFile=testRunner/testng.xml
 
 Alternatively, you can run the tests directly through your IDE (such as IntelliJ IDEA or Eclipse) by right-clicking the testng.xml file and selecting "Run".
 
